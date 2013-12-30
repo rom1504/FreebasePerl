@@ -1,5 +1,9 @@
 language: "perl"
 perl:
   - "5.14"
+  
+install:
+  - cpanm JSON
+  - cpanm LWP::Simple
 
 script: "./run-tests.sh"
